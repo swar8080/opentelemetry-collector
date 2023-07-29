@@ -1,0 +1,4 @@
+go install github.com/go-delve/delve/cmd/dlv@latest
+In intellij > Edit Custom Properties > dlv.path=/Users/sswartz/go/bin/dlv
+
+OTLP (Open Telemetry Protocol) spec: https://github.com/open-telemetry/opentelemetry-proto/blob/main/docs/specification.md

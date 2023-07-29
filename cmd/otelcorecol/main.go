@@ -11,6 +11,7 @@ import (
 )
 
 func main() {
+	log.Printf("Starting OTEL Collector!")
 	factories, err := components()
 	if err != nil {
 		log.Fatalf("failed to build components: %v", err)

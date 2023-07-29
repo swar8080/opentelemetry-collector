@@ -1,0 +1,11 @@
+<component name="ProjectRunConfigurationManager">
+  <configuration default="false" name="go build go.opentelemetry.io/collector/cmd/otelcorecol" type="GoApplicationRunConfiguration" factoryName="Go Application" nameIsGenerated="true">
+    <module name="opentelemetry-collector" />
+    <working_directory value="$PROJECT_DIR$/cmd/otelcorecol" />
+    <parameters value="--config=./otel-logging-config.yaml" />
+    <kind value="DIRECTORY" />
+    <directory value="$PROJECT_DIR$/cmd/otelcorecol" />
+    <filePath value="$PROJECT_DIR$/cmd/otelcorecol/main.go" />
+    <method v="2" />
+  </configuration>
+</component>

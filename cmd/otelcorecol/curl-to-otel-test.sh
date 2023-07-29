@@ -1,0 +1,1 @@
+curl -v -X POST -H "Content-Type: application/json" -d @logs.json -i localhost:4318/v1/logs

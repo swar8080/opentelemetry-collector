@@ -135,6 +135,8 @@ func (n *processorNode) buildComponent(ctx context.Context,
 ) error {
 	set := processor.CreateSettings{ID: n.componentID, TelemetrySettings: tel, BuildInfo: info}
 	set.TelemetrySettings.Logger = components.ProcessorLogger(set.TelemetrySettings.Logger, n.componentID, n.pipelineID)
+	set.TelemetrySettings.Logger.Info("Immediate hello from logger")
+	defer set.TelemetrySettings.Logger.Info("Defered hello from logger")
 	var err error
 	switch n.pipelineID.Type() {
 	case component.DataTypeTraces:

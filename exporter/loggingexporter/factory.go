@@ -65,6 +65,7 @@ func createMetricsExporter(ctx context.Context, set exporter.CreateSettings, con
 
 func createLogsExporter(ctx context.Context, set exporter.CreateSettings, config component.Config) (exporter.Logs, error) {
 	cfg := config.(*Config)
+	set.Logger.Info("createLogsExporter")
 	return common.CreateLogsExporter(ctx, set, config, &common.Common{
 		Verbosity:          cfg.Verbosity,
 		WarnLogLevel:       cfg.warnLogLevel,

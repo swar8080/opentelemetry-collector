@@ -150,6 +150,7 @@ func (bp *batchProcessor) newShard(md map[string][]string) *shard {
 	exportCtx := client.NewContext(context.Background(), client.Info{
 		Metadata: client.NewMetadata(md),
 	})
+	bp.logger.Info("NumCPU is", zap.Int("cpu", runtime.NumCPU()))
 	b := &shard{
 		processor: bp,
 		newItem:   make(chan any, runtime.NumCPU()),
